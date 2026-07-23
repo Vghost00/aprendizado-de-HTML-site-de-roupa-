@@ -3,55 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.A atelie</title>
+    
+
     <link rel="stylesheet" href="./src/styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-
-   <header class="cabecalho">
-    <a href="index.html" class="logo" aria-label="Ir para a página inicial">
-        <img src="./assets/img/logo.svg" alt="" />
-    </a>
-    <button class="btn-mobile-menu" aria-label="Abrir menu de navegação">
-        <i class="fa-solid fa-bars" aria-hidden="true"></i>
-    </button>
-    <nav class="menu">
-        <ul>
-            <li>Início</li>
-            <li>Produtos</li>
-            <li>Contato</li>
-        </ul>
-    </nav>
-    <search class="pesquisa-container">
-    <form action="/busca" method="GET" class="form-pesquisa">
-      <input 
-        type="search" 
-        name="q" 
-        placeholder="O que você procura?" 
-        aria-label="Buscar no site"
-    
-      />
-      <button type="submit" aria-label="Enviar pesquisa">
-        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-      </button>
-    </form>
-  </search>
-    <ul class="redes-sociais">
-    <li>
-        <a href="https://instagram.com/sualoja" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-        </a>
-    </li>
-    <li>
-        <a href="https://wa.me/55..." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-        </a>
-    </li>
-</ul>
-</header>
-</header>
-    <title>L.A atelie</title>
-</head>
 <body>
+
+    <header class="cabecalho">
+        
+
+        <div class="header-left">
+            <button class="btn-mobile-menu" aria-label="Abrir menu de navegação">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <a href="index.html" class="logo" aria-label="Ir para a página inicial">
+            <img src="./public/assets/img/logo_la_atelie_costura_v5.png" alt="L.A Ateliê" />
+        </a>
+
+        <div class="header-right">
+            <search class="pesquisa-container">
+                <form action="/busca" method="GET" class="form-pesquisa">
+                    <input 
+                        type="search" 
+                        name="q" 
+                        placeholder="O que você procura?" 
+                        aria-label="Buscar no site"
+                    />
+                    <button type="submit" aria-label="Enviar pesquisa">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </search>
+
+            <div class="header-user-actions">
+                <a href="/conta" aria-label="Minha conta">Minha conta</a>
+                <a href="/carrinho" aria-label="Carrinho de compras">Carrinho</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="./assets/img/banner.jpg" alt="Banner promocional" />
+        </section>
+
+        <section class="produtos-destaque">
+            <h2>Produtos em Destaque</h2>
+            <div class="produtos-container">
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-info">
+                <p>&copy; 2020 L.A Ateliê. Todos os direitos reservados.</p>
+                <p>Endereço: Rua governador , Cidade, Estado</p>
+                <p>Telefone: (11) 1234-5678 | Email ************:
+                </p>
+
+                     <ul class="redes-sociais">
+                <li>
+                    <a href="https://instagram.com/sualoja" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/55..." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+</footer>
     <script type="module" src="./src/components/header.js"></script>
     <script type="module" src="./src/components/footer.js"></script>
     <script type="module" src="./src/main.js"></script>
