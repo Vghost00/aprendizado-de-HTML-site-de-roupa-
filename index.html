@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+   <header class="cabecalho">
+    <a href="index.html" class="logo" aria-label="Ir para a página inicial">
+        <img src="./assets/img/logo.svg" alt="" />
+    </a>
+    <button class="btn-mobile-menu" aria-label="Abrir menu de navegação">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+    <nav class="menu">
+        <ul>
+            <li>Início</li>
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+    <search class="pesquisa-container">
+    <form action="/busca" method="GET" class="form-pesquisa">
+      <input 
+        type="search" 
+        name="q" 
+        placeholder="O que você procura?" 
+        aria-label="Buscar no site"
+    
+      />
+      <button type="submit" aria-label="Enviar pesquisa">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      </button>
+    </form>
+  </search>
+    <ul class="redes-sociais">
+    <li>
+        <a href="https://instagram.com/sualoja" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://wa.me/55..." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </li>
+</ul>
+</header>
+</header>
+    <title>L.A atelie</title>
+</head>
+<body>
+    <script type="module" src="./src/components/header.js"></script>
+    <script type="module" src="./src/components/footer.js"></script>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
